@@ -1,11 +1,6 @@
-import {
-  CameraType,
-  CameraView,
-  useCameraPermissions,
-  Camera,
-} from "expo-camera";
+import { CameraType, CameraView, useCameraPermissions } from "expo-camera";
 import { StatusBar } from "expo-status-bar";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import {
   Button,
   Platform,
@@ -22,7 +17,6 @@ import * as ImagePicker from "expo-image-picker";
 import { colors } from "../../constants";
 import { CreateScreenStep, ScreenNavigationProps } from "../../type";
 import { CountdownProgressBar } from "../CountdownProgressBar";
-import * as Permissions from "expo-permissions";
 
 const RECORD_BTN_SIZE = 60;
 const DURATION_IN_MS = 10000;
